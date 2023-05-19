@@ -1,1 +1,7 @@
 /.editorconfig
+connection.php
+functions.php
+index.php
+login.php
+logout.php
+signup.php
