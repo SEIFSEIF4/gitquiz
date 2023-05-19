@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Tahoma, Arial;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+}
+
+/* bg animation */
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    45deg,
+    #800080 0%,
+    #023de9 46%,
+    #8000ff 100%
+  );
+}
+.glass {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.glass li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  animation: spin 5s linear infinite;
+  bottom: -150px;
+}
+.glass li:nth-child(1) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+}
+.glass li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+.glass li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+.glass li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+.glass li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+.glass li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+.glass li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+.glass li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+.glass li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+.glass li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+@keyframes spin {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+} 
+
+/* login elements */
+
+form {
+  width: 350px;
+  height: 500px;
+  padding: 75px 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 45px;
+  color: white;
+  font-size: 60px;
+}
+.textBoxdiv {
+  border-bottom: 2px solid white;
+  position: relative;
+  margin: 35px 0;
+}
+.textBoxdiv input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 250px;
+}
+.loginBtn {
+  transition: 0.5s;
+  height: 45px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  background-size: 200%;
+  color: white;
+  font-size: 16px;
+}
+.loginBtn:hover {
+  background-position: right;
+  font-size: 17px;
+}
+.signup {
+  color: white;
+  margin-top: 45px;
+  text-align: center;
+}
+.signup a {
+  color: rgb(0, 0, 0);
+}
+.log {
+  color: black;
+  text-align: center;
+  margin: 0px 64px;
+}
+h1 span {
+  transition: 0.5s;
+}
+h1:hover span:nth-child(1) {
+  font-size: larger;
+}
